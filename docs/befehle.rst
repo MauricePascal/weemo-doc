@@ -18,16 +18,14 @@ Nützliches
 userinfo
 ^^^^^^^^
 
-``w#userinfo [@User]``
-
-``w#userinfo [User]``
+``w#userinfo <User>``
 
 Zeigt Informationen über das Mitglied an.
+Sollte ``User``  nicht angegeben werden, wird der eigene Account genommen.
 
 **Parameter**
 
-* **@User** - Erwähnung des Mitglieds, dessen Infos man sehen möchte.
-* **User** - Name des Mitglieds, dessen Infos man sehen möchte.
+* **User** - Name oder Erwähnung des Mitglieds, dessen Infos man sehen möchte.
 
 **Benötigte Rechte**
 
@@ -41,7 +39,9 @@ Zeigt Informationen über das Mitglied an.
 
 ``w#userinfo @Weemo``
 
-``w#userinfo Lena``
+``w#userinfo Tina``
+
+``w#userinfo``
 
 serverinfo
 ^^^^^^^^^^
@@ -67,16 +67,13 @@ Zeigt Informationen über den Server an.
 roleinfo
 ^^^^^^^^
 
-``w#roleinfo [@Rolle]``
-
 ``w#roleinfo [Rolle]``
 
 Zeigt Informationen über die Rolle an.
 
 **Parameter**
 
-* **@Rolle** - Erwähnung der Rolle, dessen Infos man sehen möchte.
-* **Rolle** - Name der Rolle, dessen Infos man sehen möchte.
+* **Rolle** - Name oder Erwähnung der Rolle, dessen Infos man sehen möchte.
 
 **Benötigte Rechte**
 
@@ -117,6 +114,58 @@ Zeigt Informationen über den Textkanal an.
 **Beispiel**
 
 ``w#channelinfo #bot-befehle``
+
+emoteurl
+^^^^^^^^
+
+``w#emoteurl [Emote]``
+
+Zeigt die URL eines Discord-Emotes an, mit der der Emote heruntergeladen werden kann.
+
+**Parameter**
+
+* **Emote** - Das Emote, dessen URL man haben möchte. Muss ein Server-Emoji, Discord Eigene Emojis werden nicht erkannt.
+
+**Benötigte Rechte**
+
+* Weemo:
+
+  * Links einbetten
+
+* Mitglied: *keine*
+
+**Beispiel**
+
+``w#userinfo 🐙``
+
+.. note:: Die Discord-Eigenen Emojis können von folgender Seite heruntergeladen werden: https://twemoji.twitter.com/
+
+avatar
+^^^^^^
+``w#avatar <User>``
+
+Gibt den Link zum Profilbild des Nutzers zurück.
+Sollte ``User``  nicht angegeben werden, wird der eigene Account genommen.
+
+**Parameter**
+
+* **User** - Name oder Erwähnung des Mitglieds, dessen  man sehen möchte.
+
+**Benötigte Rechte**
+
+* Weemo:
+
+  * Links einbetten
+
+* Mitglied: *keine*
+
+**Beispiel**
+
+``w#avatar @Weemo``
+
+``w#avatar Tina``
+
+``w#avatar``
 
 Fun
 ---
