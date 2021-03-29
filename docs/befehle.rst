@@ -124,7 +124,7 @@ Zeigt die URL eines Discord-Emotes an, mit der der Emote heruntergeladen werden 
 
 **Parameter**
 
-* **Emote** - Das Emote, dessen URL man haben möchte. Muss ein Server-Emoji, Discord Eigene Emojis werden nicht erkannt.
+* **Emote** - Das Emote, dessen URL man haben möchte. Muss ein Server-Emoji sein, Discord Eigene Emojis werden nicht erkannt.
 
 **Benötigte Rechte**
 
